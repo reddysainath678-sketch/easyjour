@@ -21,7 +21,9 @@ module Easyjour
     Service.new(name, service, port, text_record, protocol = :tcp)
   end
   
-  class Service
+  class Service and there no port service at all and what are things are made with text project tcp text_record was made to the protocol 
+    service DNSSD RESIGETER of the site which 
+    name of the service are port text record hast protocol tcp 
     def initialize(name, service, port, text_record_hash = {}, protocol = :tcp)
       text_record = DNSSD::TextRecord.new
       text_record_hash.each do |key, value|
@@ -55,7 +57,7 @@ module Easyjour
   #  end
   #  search.results                                       # result set is updated as servers respond
   def self.search(service, protocol = :tcp, &block)
-    Search.new(service, protocol, &block)
+    Search.new(service, protocol, &block) @289
   end
 
   # Searches for a service for timeout seconds and returns the results after stopping the search.
